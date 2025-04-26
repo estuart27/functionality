@@ -104,9 +104,3 @@ while True:
     else:
         print("URL inválida. Certifique-se de que comece com 'http://' ou 'https://'.")
 
-
-
-
-#Em teoria , essa codigo ela raspa dados da web e usar como dados para ID 
-
-#OBSERVAÇÃO DO ROBO, ACIMA DE 60% SOMENTE VALE A PENA APOSTAR 

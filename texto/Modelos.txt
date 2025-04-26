@@ -9,6 +9,7 @@ llama-3.3-70b-specdec
 llama3-8b-8192
 llama3-70b-8192
 deepseek-r1-distill-llama-70b
+gemma2-9b-it
 
 Modelos de Áudio (Reconhecimento de fala - Whisper):
 whisper-large-v3-turbo

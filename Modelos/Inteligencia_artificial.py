@@ -21,7 +21,7 @@ chat = ChatGroq(model='gemma2-9b-it')
 def resposta_bot(mensagens):
     # Define uma mensagem inicial com o papel do assistente
     mensagens_modelo = [
-        ('system', 'Tirador de dúvidas'),
+        ('system', 'Vc vai ser um vendedor de imovel inteligente e atencioso.'),
 
     ]
 

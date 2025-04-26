@@ -2,6 +2,19 @@ import os
 from langchain_groq import ChatGroq
 from langchain.prompts import ChatPromptTemplate
 
+import tkinter as tk
+
+def main():
+    root = tk.Tk()
+    root.title("Saudação")
+    root.geometry("200x100")
+    
+    label = tk.Label(root, text="Oi!", font=("Arial", 16))
+    label.pack(pady=20)
+    
+    root.mainloop()    
+
+
 api_key = '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'
 os.environ['GROQ_API_KEY'] = api_key
 
@@ -9,8 +22,8 @@ chat = ChatGroq(model='llama-3.3-70b-versatile')
 
 def resposta_bot(mensagens):
     mensagens_modelo = [
-        ('system', 'voce é um assistente que opera comandos'),
-        ('system', 'Quando o usuario responder HUB , vc da uma resposta unica que será VAI ESTUART'),
+        ('system', 'Atendende de uma dentista '),
+        ('system', 'reposta unica nome , maicon sem letra maiuscula'),
     ]
 
     mensagens_modelo += mensagens  # Adiciona as mensagens do usuário
@@ -29,6 +42,9 @@ while True:
     pergunta = input('Usuário: ')
     if pergunta.lower() == 'x':
         break
+
+    if pergunta.lower() == 'maicon':
+        main()
     
     mensagens.append(('user', pergunta))  # Armazena a pergunta do usuário
     resposta = resposta_bot(mensagens)     # Obtém a resposta do bot
@@ -38,3 +54,6 @@ while True:
     if resposta.lower() == 'vai estuart':  # Verifica se a resposta é 'VAI ESTUART'
         print('Safado')
 print('Muito obrigado ')
+
+# pip install langchain-groq
+# pip install langchain
