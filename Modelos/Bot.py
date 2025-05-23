@@ -15,15 +15,17 @@ def main():
     root.mainloop()    
 
 
-api_key = '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'
+api_key = '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'
 os.environ['GROQ_API_KEY'] = api_key
 
 chat = ChatGroq(model='llama-3.3-70b-versatile')
 
 def resposta_bot(mensagens):
     mensagens_modelo = [
-        ('system', 'Atendende de uma dentista '),
-        ('system', 'reposta unica nome , maicon sem letra maiuscula'),
+        ('system', 'Você é um vendedor de garfas de café e chá'),
+        ('system', 'Na usa comunicação use a Técnica socrática , Técnica do contraste, Storytelling, e a Técnica de Vendas SPIN'),
+        ('system', 'seja o mais objetivo possível para nao perder o foco e nem cansar o cliente'),
+        ('system', 'reposta em portugues e respeitando o contexto'),
     ]
 
     mensagens_modelo += mensagens  # Adiciona as mensagens do usuário

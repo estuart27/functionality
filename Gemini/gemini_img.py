@@ -39,7 +39,7 @@ if __name__ == "__main__":
         if pergunta.lower() == "sair":
             break
         # caminho = input("Caminho da imagem (ou pressione Enter para pular): ")
-        caminho = 'img/exemplo.jpg'
+        caminho = 'img/FotoGabi.jpg'
         if caminho.strip():
             pesquisar_com_imagem(pergunta, caminho)
         else:
